@@ -41,10 +41,10 @@
         function showPage() {
         document.body.classList.remove('js-loading');
         }
-    </script>
-    <!--External Form Javascript-->
-    <script type="text/javascript">
+
+        /*Form Validation*/
         function validateForm() {
+            let message;
             let fullName = document.getElementById('name').value;
             let email = document.getElementById('email').value;
             let phoneNumber = document.getElementById('phone').value;
@@ -60,29 +60,31 @@
     
             if(nameResult == false)
             {
-                alert('Please enter a valid name');
+                text = "Please enter a valid name";
                 return false;
             }
     
             if(emailResult == false)
             {
-                alert('Please enter a valid email');
+                text = "Please enter a valid email";
                 return false;
             }
     
             if(phoneResult == false)
             {
-                alert('Please enter a valid phone number');
+                text = "Please enter a valid phone number";
                 return false;
             }
             
             if(zipResult == false)
             {
-                alert('Please enter a valid postal number');
+                text="Please enter a valid postal number";
                 return false;
             } else {
                 return true;
             }
+
+            document.getElementById("message").innerHTML = text;
         }
     </script>
 
@@ -129,6 +131,7 @@
                         </div>
                     </fieldset>
                 </form>
+                <div id="message"></div>
             </div>
         </div>
         

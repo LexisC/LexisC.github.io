@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This is an example meta description."/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!--Pure CSS-->
+    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.1/build/pure-min.css" integrity="sha384-" crossorigin="anonymous">
+    
+    <!--[if lte IE 8]>
+        <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.1/build/grids-responsive-old-ie-min.css">
+    <![endif]-->
+    <!--[if gt IE 8]><!-->
+        <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.1/build/grids-responsive-min.css">
+    <!--<![endif]-->
+    
+    
+        <!--[if lte IE 8]>
+            <link rel="stylesheet" href="css/layouts/pricing-old-ie.css">
+        <![endif]-->
+        <!--[if gt IE 8]><!-->
+            <link rel="stylesheet" href="css/layouts/pricing.css">
+        <!--<![endif]-->
+
+    <!--Google Font-->
+    <link href="https://fonts.googleapis.com/css?family=Gothic+A1&display=swap" rel="stylesheet">
+    <!--Font Awesome Library Link-->
+    <script src="https://kit.fontawesome.com/df4b2fc3c7.js"></script>
+    <!--Stylesheets-->
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" href="css/styles.css">
+    
+    <!--Makes Sure Things Are Loaded Before Animation Starts-->
+    <script>
+        document.body.classList.add('js-loading');
+
+        window.addEventListener("load", showPage);
+        
+        function showPage() {
+        document.body.classList.remove('js-loading');
+        }
+    </script>
+
+    <title>Test Landing Page</title>
+</head>
+<body>
+    <div class="content-wrapper">
+        <!--Navigation-->
+        <div id="nav" class="pure-g">
+            <div class="pure-u-1 pure-u-md-1-2">
+                <a href="#"><img class="pure-img logo" alt="logo" src="img/logo.png"/></a>
+            </div>
+            <div id="nav-info" class="pure-u-1 pure-u-md-1-2">
+                <p class="info">Call for a FREE Consultation</p>
+                <a href="tel:+1-954-555-5555"><p class="num">954.555.5555</p></a>
+            </div>
+        </div>
+        
+        <!--Hero Banner-->
+        <div class="banner pure-img">
+            <h1 class="banner-head">
+                Lorem Ipsum Dolor Sit Amet?<br>
+                <span class="subhead">Integer consectetur rhoncus elit sit amet feugiat!</span>
+            </h1>
+            <div id="banner-form">
+                <form class="pure-g pure-form">
+                    <fieldset>
+                        <legend class="pure-u-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut posuere ut
+                            nunc et scelerisque. Curabitur in ullamcorper libero.</legend>
+                        <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-5">
+                            <input class="pure-u-23-24" id="name" type="text" placeholder="Full Name">
+                        </div>
+                        <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-5">
+                            <input class="pure-u-23-24" id="email" type="email" placeholder="Email">
+                        </div>
+                        <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-5">
+                            <input class="pure-u-23-24" id="phone" type="tel" placeholder="Phone">
+                        </div>
+                        <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-5">
+                            <input class="pure-u-23-24" id="zip" type="text" placeholder="Zip Code">
+                        </div>
+                        <div class="pure-u-1 pure-u-lg-1-5">
+                            <button type="submit" class="pure-u-23-24 pure-button pure-button-primary">SUBMIT<i class="fas fa-angle-double-right"></i></button>
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+        
+        <!--Main Section-->
+        <div class="pure-g" id="main-section">
+            <div class="pure-u-1">
+                <h2>Mauris Efficitur Sapien Ullamcorper Auctor</h2>
+                <p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+                    Nam non tempus nisi, et sollicitudin felis. Ut imperdiet sem vel tristique elementum. In sit
+                    amet bibendum est. Nunc urna urna, tempor eu volutpat in, consequat quis risus. Cras vulputate
+                    sem urna, vitae auctor risus condimentum vel. Vivamus hendrerit a odio eget condimentum. Donec
+                    consectetur urna non eros iaculis, in pretium magna aliquet.</p>
+                <br>
+                <p class="emph">Pellentesque Consectetur Molestie Turpis !</p>
+            </div>
+        </div>
+        
+        <!--Icons Section-->
+        <div class="icon-section pure-g">
+            <div class="pure-u-1 pure-u-md-1-4">
+                <img class="pure-img icon" alt="calendar icon" src="img/calendar.png"/>
+                <p class="icon-num">40+</p>
+                <p class="caption">Lorem Ipsum</p>
+            </div>
+            <div class="pure-u-1 pure-u-md-1-4">
+                <img class="pure-img icon build" alt="building icon" src="img/building.png"/>
+                <p class="icon-num">10,000+</p>
+                <p class="caption">Lorem Ipsum</p>
+            </div>
+            <div class="pure-u-1 pure-u-md-1-4">
+                <img class="pure-img icon" alt="person icon" src="img/person.png"/>
+                <p class="icon-num">500+</p>
+                <p class="caption">Lorem Ipsum</p>
+            </div>
+            <div class="pure-u-1 pure-u-md-1-4">
+                <img class="pure-img icon globe" alt="globe icon" src="img/globe.png"/>
+                <p class="icon-num">200+</p>
+                <p class="caption">Lorem Ipsum</p>
+            </div>
+        </div>
+
+        <!--Additional Info Section-->
+        <div class="add-wrapper pure-g">
+            <div id="additional-info" class="pure-u-1 pure-u-lg-3-5">
+                <p>Mauris efficitur sapien ac ullamcorper auctor. Sed facilisis ante ut eros tempus venenatis.
+                    Pellentesque consectetur molestie turpis porta mollis. Phasellus nec tellus dignissim orci
+                    ornare lobortis. Phasellus vulputate eu dui quis mattis. Phasellus lacinia sed erat in
+                    dignissim. Morbi sed nisl eget arcu scelerisque scelerisque. Praesent efficitur, nisl nec
+                    auctor volutpat.<br><span class="emph2">Lorem ipsum dolor sit amet:</span></p>
+                    
+                <ul>
+                    <li><i class="fas fa-angle-right"></i>Nulla at erat in ipsum suscipit dapibus</li>
+                    <li><i class="fas fa-angle-right"></i>Nulla at erat in ipsum suscipit dapibus</li>
+                    <li><i class="fas fa-angle-right"></i>Nulla at erat in ipsum suscipit dapibus</li>
+                    <li><i class="fas fa-angle-right"></i>Nulla at erat in ipsum suscipit dapibus</li>
+                    <li><i class="fas fa-angle-right"></i>Nulla at erat in ipsum suscipit dapibus</li>
+                    <li><i class="fas fa-angle-right"></i>Nulla at erat in ipsum suscipit dapibus</li>
+                </ul>
+
+                <button type="download" class="pure-button pure-button-secondary"><a href="#">DOWNLOAD</a></button>
+            </div>
+            <div class="pure-u-1 pure-u-lg-2-5">
+                <img id="pic1" class="pure-img" alt="picture with graphs" src="img/pic1.png"/>
+            </div>
+        </div>
+
+        <!--Footer Section-->
+        <div class="pure-g" id="footer">
+            <div class="pure-u-1" id="call">
+                <p>Call our office at <span class="foot-num"><a href="tel:+1-954-555-5555">954-555-5555</a></span> to learn more today!</p>
+            </div>
+            <div class="pure-u-1" id="copy">
+                <p>© 2019 DAS Group. All Rights Reserved.</p>
+            </div>
+        </div>
+    </div> <!--End Content Wrapper-->   
+</body>
+</html>

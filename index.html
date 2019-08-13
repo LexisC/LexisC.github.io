@@ -58,11 +58,11 @@
             let phoneResult = phoneRGEX.test(phoneNumber);
             let zipResult = zipRGEX.test(zipCode);
 
-            fullName.addEventListener("input", function (event) {
+            nameResult.addEventListener("input", function (event) {
                 if (nameResult.validity.typeMismatch) {
-                    fullName.setCustomValidity("Please enter a valid name");
+                    nameResult.setCustomValidity("Please enter a valid name");
                 } else {
-                    fullName.setCustomValidity("");
+                    nameResult.setCustomValidity("");
                 }
             });
     

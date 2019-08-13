@@ -58,26 +58,22 @@
             let zipResult = zipRGEX.test(zipCode);
             
             if(nameResult == false || nameResult == "") {
-                nameError = "Please enter a valid name.";
-                document.getElementById("message").innerHTML = nameError;
+                document.getElementById("message").innerHTML = "Please enter a valid name.";
                 return = false;
             }
     
             if(emailResult == false || emailResult == "") {   
-                emailError = "Please enter a valid email.";
-                document.getElementById("message").innerHTML = emailError;
+                document.getElementById("message").innerHTML = "Please enter a valid email.";
                 return = false;
             }
             
             if(phoneResult == false || phoneResult == "") {
-                phoneError = "Please enter a valid phone number.";
-                document.getElementById("message").innerHTML = phoneError;
+                document.getElementById("message").innerHTML = "Please enter a valid phone number.";
                 return = false;
             }
             
             if(zipResult == false || zipResult == "") {
-                zipError = "Please enter a valid zip code number.";
-                document.getElementById("message").innerHTML = zipError;
+                document.getElementById("message").innerHTML = "Please enter a valid zip code number.";
                 return = false;
             }
         
@@ -128,7 +124,7 @@
                         </div>
                     </fieldset>
                 </form>
-                <p style="color: red;" id="message"></p>p
+                <p style="color: red;" id="message"></p>
             </div>
         </div>
         

@@ -58,13 +58,10 @@
             let zipResult = zipRGEX.test(zipCode);
             
             fullName.addEventListener("input", function (event) {
-                if(nameResult == false, fullName.validity.typeMismatch)
+                if(nameResult == false)
                 {   
-                    fullName.setCustomValidity("Please enter a valid name.");
-                    
-                }
-                else {
-                    fullName.setCustomValidity("");
+                    let text = "Please enter a valid name.";
+                    document.getElementById("message").innerHTML = text;
                 }
             };
 

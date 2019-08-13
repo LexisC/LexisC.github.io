@@ -46,7 +46,7 @@
         function validateForm() {
             let message;
             let fullName = document.getElementById('name').value;
-            let email = document.getElementById('email').value;
+            var email = document.getElementById('email').value;
             let phoneNumber = document.getElementById('phone').value;
             let zipCode = document.getElementById('zip').value;
             let nameRGEX = /^[A-Za-z]+$/;
@@ -71,7 +71,7 @@
                 text = "Please enter a valid name";
                 return false;
             }
-            
+
             if(phoneResult == false)
             {
                 text = "Please enter a valid phone number";

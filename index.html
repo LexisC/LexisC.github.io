@@ -57,27 +57,26 @@
             let phoneResult = phoneRGEX.test(phoneNumber);
             let zipResult = zipRGEX.test(zipCode);
             
-    
-            if(nameResult == false) {
-                let nameError = "Please enter a valid name.";
+            if(nameResult == false || nameResult == "") {
+                nameError = "Please enter a valid name.";
                 document.getElementById("message").innerHTML = nameError;
                 return = false;
             }
     
-            if(emailResult == false) {   
-                let emailError = "Please enter a valid email.";
+            if(emailResult == false || emailResult == "") {   
+                emailError = "Please enter a valid email.";
                 document.getElementById("message").innerHTML = emailError;
                 return = false;
             }
             
-            if(phoneResult == false) {
-                let phoneError = "Please enter a valid phone number.";
+            if(phoneResult == false || phoneResult == "") {
+                phoneError = "Please enter a valid phone number.";
                 document.getElementById("message").innerHTML = phoneError;
                 return = false;
             }
             
-            if(zipResult == false) {
-                let zipError = "Please enter a valid zip code number.";
+            if(zipResult == false || zipResult == "") {
+                zipError = "Please enter a valid zip code number.";
                 document.getElementById("message").innerHTML = zipError;
                 return = false;
             }

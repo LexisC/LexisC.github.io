@@ -57,16 +57,13 @@
             let phoneResult = phoneRGEX.test(phoneNumber);
             let zipResult = zipRGEX.test(zipCode);
             
-            fullName.addEventListener("input", function (event) {
-                if(nameResult == false, fullName.validity.typeMismatch)
-                {   
-                    fullName.setCustomValidity("Please enter a valid name.");
-                    let text = "Please enter a valid name.";
-                    document.getElementById("message").innerHTML = text;
+    
+            if(nameResult == false, fullName.validity.typeMismatch) {
+                    document.getElementById("message").innerHTML = "Please enter a valid name.";
                 }
-                else {
-                    fullName.setCustomValidity("");
-                }
+            else {
+                return true;
+            }
             });
 
             email.addEventListener("input", function (event) {

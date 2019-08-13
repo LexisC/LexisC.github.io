@@ -60,20 +60,25 @@
     
             if(nameResult == false) {
                 document.getElementById("message").innerHTML = "Please enter a valid name.";
+                return = false;
             }
     
             if(emailResult == false) {   
                 document.getElementById("message").innerHTML = "Please enter a valid email.";
+                return = false;
             }
             
             if(phoneResult == false) {
                 document.getElementById("message").innerHTML = "Please enter a valid phone number.";
+                return = false;
             }
             
             if(zipResult == false) {
                 document.getElementById("message").innerHTML = "Please enter a valid zip code number.";
-
+                return = false;
             }
+
+            return submit
         }
     </script>
 
@@ -120,7 +125,7 @@
                         </div>
                     </fieldset>
                 </form>
-                <div id="message"></div>
+                <div style="color: red;" id="message"></div>
             </div>
         </div>
         

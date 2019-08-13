@@ -59,26 +59,30 @@
             
     
             if(nameResult == false) {
-                document.getElementById("message").innerHTML = "Please enter a valid name.";
+                nameError = "Please enter a valid name.";
+                document.getElementById("message").innerHTML = nameError;
                 return = false;
             }
     
             if(emailResult == false) {   
-                document.getElementById("message").innerHTML = "Please enter a valid email.";
+                emailError = "Please enter a valid email.";
+                document.getElementById("message").innerHTML = emailError;
                 return = false;
             }
             
             if(phoneResult == false) {
-                document.getElementById("message").innerHTML = "Please enter a valid phone number.";
+                phoneError = "Please enter a valid phone number.";
+                document.getElementById("message").innerHTML = phoneError;
                 return = false;
             }
             
             if(zipResult == false) {
-                document.getElementById("message").innerHTML = "Please enter a valid zip code number.";
+                zipError = "Please enter a valid zip code number.";
+                document.getElementById("message").innerHTML = zipError;
                 return = false;
             }
 
-            return submit
+            return submit;
         }
     </script>
 

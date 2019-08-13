@@ -59,16 +59,15 @@
             
     
             if(nameResult == false) {
-                    document.getElementById("message").innerHTML = "Please enter a valid name.";
-                }
+                document.getElementById("message").innerHTML = "Please enter a valid name.";
+            }
             else {
                 return true;
             };
 
-            if(emailResult == false, email.validity.typeMismatch)
-                {   
-                    document.getElementById("message").innerHTML = "Please enter a valid email.";
-                }
+            if(emailResult == false) {   
+                document.getElementById("message").innerHTML = "Please enter a valid email.";
+            }
             else {
                 return true;
             };
@@ -134,7 +133,7 @@
                         </div>
                     </fieldset>
                 </form>
-                <div id="message"></div>
+                <div style="color:white;" id="message"></div>
             </div>
         </div>
         

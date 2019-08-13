@@ -58,11 +58,11 @@
             let phoneResult = phoneRGEX.test(phoneNumber);
             let zipResult = zipRGEX.test(zipCode);
 
-            nameResult.addEventListener("input", function (event) {
-                if (nameResult.validity.typeMismatch) {
-                    nameResult.setCustomValidity("Please enter a valid name");
+            email.addEventListener("input", function (event) {
+                if (email.validity.typeMismatch) {
+                    email.setCustomValidity("I expect an e-mail, darling!");
                 } else {
-                    nameResult.setCustomValidity("");
+                    email.setCustomValidity("");
                 }
             });
     
@@ -71,13 +71,7 @@
                 text = "Please enter a valid name";
                 return false;
             }
-    
-            if(emailResult == false)
-            {
-                text = "Please enter a valid email";
-                return false;
-            }
-    
+            
             if(phoneResult == false)
             {
                 text = "Please enter a valid phone number";

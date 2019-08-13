@@ -67,14 +67,19 @@
                 else {
                     fullName.setCustomValidity("");
                 }
-            };
+            });
 
-            if(emailResult == false)
-            {
-                let text = "Please enter a valid email.";
-                document.getElementById("message").innerHTML = text;
-                return false;
-            }
+            email.addEventListener("input", function (event) {
+                if(emailResult == false, email.validity.typeMismatch)
+                {   
+                    email.setCustomValidity("Please enter a valid email.");
+                    let text = "Please enter a valid email.";
+                    document.getElementById("message").innerHTML = text;
+                }
+                else {
+                    fullName.setCustomValidity("");
+                }
+            });
             
             if(phoneResult == false)
             {

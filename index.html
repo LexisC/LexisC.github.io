@@ -61,29 +61,18 @@
             if(nameResult == false) {
                 document.getElementById("message").innerHTML = "Please enter a valid name.";
             }
-            else {
-                return true;
-            };
-
+    
             if(emailResult == false) {   
                 document.getElementById("message").innerHTML = "Please enter a valid email.";
             }
-            else {
-                return true;
-            };
             
-            if(phoneResult == false)
-            {
-                let text = "Please enter a valid phone number.";
-                document.getElementById("message").innerHTML = text;
-                return false;
+            if(phoneResult == false) {
+                document.getElementById("message").innerHTML = "Please enter a valid phone number.";
             }
             
-            if(zipResult == false)
-            {
-                text = "Please enter a valid postal number.";
-                document.getElementById("message").innerHTML = text;
-                return false;
+            if(zipResult == false) {
+                document.getElementById("message").innerHTML = "Please enter a valid zip code number.";
+
             } else {
                 return true;
             }
@@ -133,7 +122,7 @@
                         </div>
                     </fieldset>
                 </form>
-                <div style="color:white;" id="message"></div>
+                <div id="message"></div>
             </div>
         </div>
         

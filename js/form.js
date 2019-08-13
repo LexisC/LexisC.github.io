@@ -1,5 +1,5 @@
-<script>
-    validate = () => {
+<script type="text/javascript">
+    function validateForm() {
         let fullName = document.getElementById('name').value;
         let email = document.getElementById('email').value;
         let phoneNumber = document.getElementById('phone').value;
@@ -38,5 +38,5 @@
         } else {
             return true;
         }
-    };
+    }
 </script>

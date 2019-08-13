@@ -59,7 +59,7 @@
             let zipResult = zipRGEX.test(zipCode);
 
             fullName.addEventListener("input", function (event) {
-                if (fullName.validity.typeMismatch) {
+                if (nameResult.validity.typeMismatch) {
                     fullName.setCustomValidity("Please enter a valid name");
                 } else {
                     fullName.setCustomValidity("");

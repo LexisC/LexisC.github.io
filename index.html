@@ -58,25 +58,20 @@
             let zipResult = zipRGEX.test(zipCode);
             
     
-            if(nameResult == false, fullName.validity.typeMismatch) {
+            if(nameResult == false) {
                     document.getElementById("message").innerHTML = "Please enter a valid name.";
                 }
             else {
                 return true;
-            }
-            });
+            };
 
-            email.addEventListener("input", function (event) {
-                if(emailResult == false, email.validity.typeMismatch)
+            if(emailResult == false, email.validity.typeMismatch)
                 {   
-                    email.setCustomValidity("Please enter a valid email.");
-                    let text = "Please enter a valid email.";
-                    document.getElementById("message").innerHTML = text;
+                    document.getElementById("message").innerHTML = "Please enter a valid email.";
                 }
-                else {
-                    fullName.setCustomValidity("");
-                }
-            });
+            else {
+                return true;
+            };
             
             if(phoneResult == false)
             {

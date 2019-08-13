@@ -57,6 +57,14 @@
             let emailResult = emailRGEX.test(email);
             let phoneResult = phoneRGEX.test(phoneNumber);
             let zipResult = zipRGEX.test(zipCode);
+
+            fullName.addEventListener("input", function (event) {
+                if (fullName.validity.typeMismatch) {
+                    fullName.setCustomValidity("Please enter a valid name");
+                } else {
+                    fullName.setCustomValidity("");
+                }
+            });
     
             if(nameResult == false)
             {
@@ -78,7 +86,7 @@
             
             if(zipResult == false)
             {
-                text="Please enter a valid postal number";
+                text = "Please enter a valid postal number";
                 return false;
             } else {
                 return true;

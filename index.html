@@ -60,6 +60,7 @@
             fullName.addEventListener("input", function (event) {
                 if(nameResult == false, fullName.validity.typeMismatch)
                 {   
+                    fullName.setCustomValidity("Please enter a valid name.");
                     let text = "Please enter a valid name.";
                     document.getElementById("message").innerHTML = text;
                 }

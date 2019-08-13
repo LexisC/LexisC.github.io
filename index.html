@@ -44,9 +44,8 @@
 
         /*Form Validation*/
         function validateForm() {
-            let message;
             let fullName = document.getElementById('name').value;
-            var email = document.getElementById('email').value;
+            let email = document.getElementById('email').value;
             let phoneNumber = document.getElementById('phone').value;
             let zipCode = document.getElementById('zip').value;
             let nameRGEX = /^[A-Za-z]+$/;
@@ -57,30 +56,22 @@
             let emailResult = emailRGEX.test(email);
             let phoneResult = phoneRGEX.test(phoneNumber);
             let zipResult = zipRGEX.test(zipCode);
-
-            email.addEventListener("input", function (event) {
-                if (email.validity.typeMismatch) {
-                    email.setCustomValidity("I expect an e-mail, darling!");
-                } else {
-                    email.setCustomValidity("");
-                }
-            });
     
             if(nameResult == false)
             {
-                text = "Please enter a valid name";
+                let text = "Please enter a valid name";
                 return false;
             }
-
+            
             if(phoneResult == false)
             {
-                text = "Please enter a valid phone number";
+                let text = "Please enter a valid phone number";
                 return false;
             }
             
             if(zipResult == false)
             {
-                text = "Please enter a valid postal number";
+                let text = "Please enter a valid postal number";
                 return false;
             } else {
                 return true;

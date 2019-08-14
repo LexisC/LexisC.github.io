@@ -39,16 +39,16 @@
             let email = document.getElementById('email').value;
             let phoneNumber = document.getElementById('phone').value;
             let zipCode = document.getElementById('zip').value;
-            var nameRGEX = new RegExp("/^[A-Za-z]+$/");
-            var emailRGEX = new RegExp("/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/");
+            var nameRGEX = new RegExp('/^[A-Za-z]+$/');
+            var emailRGEX = new RegExp('/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/');
             //var phoneRGEX = new RegExp("/^[(]{0,1}[0-9]{3}[)]{0,1}[-\s\.]{0,1}[0-9]{3}[-\s\.]{0,1}[0-9]{4}$/");
-            var phoneRGEX = new RegExp("\d{9}");
+            var phoneRGEX = new RegExp('\d{9}');
             //let zipRGEX = new RegExp("/^[A-Z]{1,2}[0-9]{1,2} ?[0-9][A-Z]{2}$/i");
-            var zipRGEX = new RegExp("\d{5}");
+            var zipRGEX = new RegExp('\d{5}');
             var nameResult = nameRGEX.test(fullName);
             var emailResult = emailRGEX.test(email);
             var phoneResult = phoneRGEX.test(phoneNumber);
-            var zipResult = true;
+            var zipResult = zipRGEX.test(zipCode);
             console.log(nameRGEX.test('fullName'));
             
             if(nameResult == false || nameResult == "") {

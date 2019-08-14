@@ -52,26 +52,16 @@
             if(nameResult == false || nameResult == "") {
                 document.getElementById("message").innerHTML = "Please enter a valid name.";
                 return (false)
-            } else {
-                document.getElementById("message").innerHTML = "";
-                return (true)
             }
-    
-            if(emailResult == false || emailResult == "") {   
+            else if (emailResult == false || emailResult == "") {   
                 document.getElementById("message").innerHTML = "Please enter a valid email.";
                 return (false)
-            } else {
-                return (true)
             }
-            
-            if(phoneResult == false || phoneResult == "") {
+            else if(phoneResult == false || phoneResult == "") {
                 document.getElementById("message").innerHTML = "Please enter a valid phone number.";
                 return (false)
-            } else {
-                return (true)
-            }
-            
-            if(zipResult == false || zipResult == "") {
+            }            
+            else if(zipResult == false || zipResult == "") {
                 document.getElementById("message").innerHTML = "Please enter a valid zip code number.";
                 return (false)
             } else {
@@ -125,7 +115,7 @@
                         </div>
                     </fieldset>
                 </form>
-                <p style="color: #ac1c1c;" id="message"></p>
+                <p style="color: #b43333; font-weight: bold;" id="message"></p>
             </div>
         </div>
         

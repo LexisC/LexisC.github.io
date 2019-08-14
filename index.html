@@ -51,7 +51,7 @@
             var zipResult = zipRGEX.test(zipCode);
             console.log(nameRGEX.test('fullName'));
             
-            if(nameResult == false || nameResult == "") {
+            if(nameResult !== true || nameResult == "") {
                 document.getElementById("message").innerHTML = "Please enter a valid name.";
                 return (false)
             }

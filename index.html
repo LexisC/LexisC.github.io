@@ -42,14 +42,15 @@
             let nameRGEX = new RegExp("/^[A-Za-z]+$/");
             let emailRGEX = new RegExp("/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/");
             let phoneRGEX = new RegExp("/^[(]{0,1}[0-9]{3}[)]{0,1}[-\s\.]{0,1}[0-9]{3}[-\s\.]{0,1}[0-9]{4}$/");
-            let zipRGEX = new RegExp("/^[A-Z]{1,2}[0-9]{1,2} ?[0-9][A-Z]{2}$/i");
+            //let zipRGEX = new RegExp("/^[A-Z]{1,2}[0-9]{1,2} ?[0-9][A-Z]{2}$/i");
+            let zipRGEX = new RegExp("[^\d](\d{5})[^\d]");
             let nameResult = nameRGEX.test(fullName);
             let emailResult = emailRGEX.test(email);
             let phoneResult = phoneRGEX.test(phoneNumber);
             let zipResult = zipRGEX.test(zipCode);
             console.log(nameRGEX.test('fullName'));
             
-            if(nameResult !== true || nameResult == "") {
+            if(nameResult == false || nameResult == "") {
                 document.getElementById("message").innerHTML = "Please enter a valid name.";
                 return (false)
             }

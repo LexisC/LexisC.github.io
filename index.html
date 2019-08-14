@@ -49,19 +49,19 @@
             let zipResult = zipRGEX.test(zipCode);
             console.log(nameRGEX.test('fullName'));
             
-            if(nameResult == false || nameResult == "") {
+            if(nameResult !== true || nameResult == "") {
                 document.getElementById("message").innerHTML = "Please enter a valid name.";
                 return (false)
             }
-            else if (emailResult == false || emailResult == "") {   
+            else if (emailResult !== true || emailResult == "") {   
                 document.getElementById("message").innerHTML = "Please enter a valid email.";
                 return (false)
             }
-            else if(phoneResult == false || phoneResult == "") {
+            else if(phoneResult !== true || phoneResult == "") {
                 document.getElementById("message").innerHTML = "Please enter a valid phone number.";
                 return (false)
             }            
-            else if(zipResult == false || zipResult == "") {
+            else if(zipResult !== true || zipResult == "") {
                 document.getElementById("message").innerHTML = "Please enter a valid zip code number.";
                 return (false)
             } else {

@@ -32,16 +32,7 @@
     <link rel="stylesheet" type="text/css" href="css/reset.css">
     <link rel="stylesheet" href="css/styles.css">
     
-    <!--Makes Sure Things Are Loaded Before Animation Starts-->
     <script>
-        document.body.classList.add('js-loading');
-
-        window.addEventListener("load", showPage);
-        
-        function showPage() {
-        document.body.classList.remove('js-loading');
-        }
-
         /*Form Validation*/
         function validateForm() {
             let fullName = document.getElementById('name').value;
